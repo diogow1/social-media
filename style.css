@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Satisfy&display=swap');
+:root{
+  --color-shadow:#00000027;
+  --color-twitch:#6441a5;
+  --color-twitter:#1DA1F2;
+  --color-gitgub:#000000;
+  --color-instagram:#E1306C;
+  --color-spotify:#1db954;
+
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*body, html{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  background: linear-gradient(350deg, #93e8f7, #ff97e0);
+}*/
+
+body, html{
+  height: 100%;
+  width: 100%;
+}
+
+#nickName{
+  position: absolute;
+  top: 35%;
+  font-family: 'Raleway', sans-seri;
+  font-size: 50px;
+  font-weight: 500;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.divIcones{
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background: linear-gradient(350deg,#414141,#141414);
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.lista{
+  list-style: none;
+  display: flex;
+}
+
+.icone, a{
+  text-decoration: none;
+  border-radius: 40%;
+  padding: 15px;
+  margin: 10px;
+  width: 30px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /*transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);*/
+}
+
+a{
+position: absolute;
+}
+.icone{
+  position: relative;
+  background-color: #ffffff;
+  font-size: 18px;
+  box-shadow: 0 10px 10px var(--color-shadow);
+}
+
+.socialMedia{
+  position: absolute;
+  top:0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 9px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px var(--color-shadow);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.imgIcone{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+/* ------------- Todos os hovers do html ------------- */
+
+#iconeTwitch:hover, .socialMedia{
+  background-color: var(--color-twitch);
+  color: #ffffff;
+}
+
+#iconeInstagram:hover, .socialMedia{
+  background-color: var(--color-instagram);
+  color: #ffffff;
+}
+
+#iconeGithub:hover, .socialMedia{
+  background-color: var(--color-gitgub);
+  color: #ffffff;
+}
+
+#iconeTwitter:hover, .socialMedia{
+  background-color: var(--color-twitter);
+  color: #ffffff;
+}
+
+#imgIcone:hover{
+  color: white;
+}
+
+#iconeSpotify:hover, .socialMedia{
+  background-color: var(--color-spotify);
+  color: #ffffff;
+}
+
+/* ------------- Nick em mobile e outras resoluções ------------- */
+@media screen and (max-height:800px){
+  #nickName{
+    top:29%;
+  }
+}
+
+@media screen and (max-height:600px){
+  #nickName{
+    top:55%;
+  }
+}
+@media screen and (max-width:768px){
+  #nickName{
+    top:55%;
+  }
+}
+/*----------------------------------------------------------------*/
