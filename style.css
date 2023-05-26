@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Satisfy&display=swap');
+
 :root{
   --color-shadow:#00000027;
   --color-twitch:#6441a5;
@@ -15,13 +16,6 @@
   padding: 0;
 }
 
-/*body, html{
-  display: grid;
-  height: 100%;
-  width: 100%;
-  font-family: sans-serif;
-  background: linear-gradient(350deg, #93e8f7, #ff97e0);
-}*/
 
 body, html{
   height: 100%;
@@ -30,7 +24,7 @@ body, html{
 
 #nickName{
   position: absolute;
-  top: 35%;
+  top: 38%;
   font-family: 'Raleway', sans-seri;
   font-size: 50px;
   font-weight: 500;
@@ -63,7 +57,6 @@ body, html{
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  /*transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);*/
 }
 
 a{
@@ -130,7 +123,7 @@ position: absolute;
 /* ------------- Nick em mobile e outras resoluções ------------- */
 @media screen and (max-height:800px){
   #nickName{
-    top:29%;
+    top:32%;
   }
 }
 
