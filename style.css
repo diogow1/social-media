@@ -2,11 +2,10 @@
 
 :root{
   --color-shadow:#00000027;
-  --color-twitch:#6441a5;
-  --color-twitter:#1DA1F2;
+  --color-whatsapp:#21ad54;
+  --color-email:#EA4335;
   --color-gitgub:#000000;
-  --color-instagram:#E1306C;
-  --color-spotify:#1db954;
+  --color-linkedin:#0e76a8;
 
 }
 
@@ -16,7 +15,6 @@
   padding: 0;
 }
 
-
 body, html{
   height: 100%;
   width: 100%;
@@ -24,10 +22,10 @@ body, html{
 
 #nickName{
   position: absolute;
-  top: 38%;
+  top: 39vh;
   font-family: 'Raleway', sans-seri;
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 400;
   font-style: italic;
   color: #ffffff;
 }
@@ -36,7 +34,7 @@ body, html{
   display: grid;
   place-items: center;
   height: 100%;
-  background: linear-gradient(350deg,#414141,#141414);
+  background: linear-gradient(330deg,#6a009b,#280096);
   width: 100%;
   font-family: sans-serif;
 }
@@ -48,11 +46,11 @@ body, html{
 
 .icone, a{
   text-decoration: none;
-  border-radius: 40%;
-  padding: 15px;
+  border-radius: 30%;
+  padding: 13px;
   margin: 10px;
-  width: 30px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +78,6 @@ position: absolute;
   box-shadow: 0 10px 10px var(--color-shadow);
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .imgIcone{
@@ -91,13 +88,8 @@ position: absolute;
 
 /* ------------- Todos os hovers do html ------------- */
 
-#iconeTwitch:hover, .socialMedia{
-  background-color: var(--color-twitch);
-  color: #ffffff;
-}
-
-#iconeInstagram:hover, .socialMedia{
-  background-color: var(--color-instagram);
+#iconeWhatsapp:hover, .socialMedia{
+  background-color: var(--color-whatsapp);
   color: #ffffff;
 }
 
@@ -106,8 +98,8 @@ position: absolute;
   color: #ffffff;
 }
 
-#iconeTwitter:hover, .socialMedia{
-  background-color: var(--color-twitter);
+#iconeEmail:hover, .socialMedia{
+  background-color: var(--color-email);
   color: #ffffff;
 }
 
@@ -115,26 +107,34 @@ position: absolute;
   color: white;
 }
 
-#iconeSpotify:hover, .socialMedia{
-  background-color: var(--color-spotify);
+#iconeLinkedin:hover, .socialMedia{
+  background-color: var(--color-linkedin);
   color: #ffffff;
 }
 
 /* ------------- Nick em mobile e outras resoluções ------------- */
-@media screen and (max-height:800px){
+@media screen and (max-height:690px){
   #nickName{
-    top:32%;
+    top:33vh;
   }
 }
 
-@media screen and (max-height:600px){
+@media screen and (max-height:790px){
   #nickName{
-    top:55%;
+    top:34vh;
   }
 }
-@media screen and (max-width:768px){
+
+@media screen and (max-height:550px){
   #nickName{
-    top:55%;
+    top:29vh;
   }
 }
+
+@media screen and (max-height:390px){
+  #nickName{
+    top:20vh;
+  }
+}
+
 /*----------------------------------------------------------------*/
