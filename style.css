@@ -137,4 +137,10 @@ position: absolute;
   }
 }
 
+@media screen and (max-height:265px){
+  #nickName{
+    top:10vh;
+  }
+}
+
 /*----------------------------------------------------------------*/
